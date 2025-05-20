@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Layout 5 Button với Background</title>
+  <title>Layout 5 Button với Tiêu đề và Background</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
@@ -27,15 +27,26 @@
       align-items: center;
     }
 
+    .content {
+      text-align: center;
+      color: white;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+    }
+
+    .content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
     .button-container {
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
       justify-content: center;
-      background-color: rgba(255, 255, 255, 0.1); /* mờ nhẹ nền */
-      padding: 20px;
-      border-radius: 12px;
-      backdrop-filter: blur(6px); /* hiệu ứng mờ nền */
     }
 
     .button-container a {
@@ -89,19 +100,25 @@
       .button-container a {
         width: 80%;
       }
+
+      .content h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="background-wrapper">
-    <div class="button-container">
-      <a href="https://example.com/muc1" target="_blank">Mục 1</a>
-      <a href="https://example.com/muc2" target="_blank">Mục 2</a>
-      <a href="https://example.com/muc3" target="_blank">Mục 3</a>
-      <a href="https://example.com/muc4" target="_blank">Mục 4</a>
-      <a href="https://example.com/muc5" target="_blank">Mục 5</a>
+    <div class="content">
+      <h1>Lean Basic Test </h1>
+      <div class="button-container">
+        <a href="https://forms.gle/CTaJmyMfUKUjTBQ57">KAIZEN</a>
+        <a href="https://forms.gle/Nwz92rMc1dC5SZQb7">SWS & Line balancing</a>
+        <a href="https://forms.gle/LJSXbtwK8BLzUH8L7">Takt time/cycle time</a>
+        <a href="https://forms.gle/Kqy2xJjXSXsEcCPG9">6S</a>
+        <a href="https://forms.gle/jKR19smW5GZqiTKV7">QCO -SMED</a>
+      </div>
     </div>
   </div>
 </body>
 </html>
-
